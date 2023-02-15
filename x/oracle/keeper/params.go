@@ -8,9 +8,10 @@ import (
 	"github.com/umee-network/umee/v4/x/oracle/types"
 )
 
+// TODO this is modified for testing purpose. Change it back to 16h and 2h respectively
 const (
-	AvgPeriod time.Duration = time.Hour * 16
-	AvgShift  time.Duration = time.Hour * 2
+	AvgPeriod time.Duration = time.Hour
+	AvgShift  time.Duration = time.Minute * 10
 )
 
 // VotePeriod returns the number of blocks during which voting takes place.
